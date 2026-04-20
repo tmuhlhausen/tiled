@@ -1,0 +1,36 @@
+{
+  "id": "l1",
+  "name": "Cathedral",
+  "game": "diablo",
+  "status": "draft",
+  "tileMetrics": {
+    "tileWidth": 128,
+    "tileHeight": 64,
+    "subtileScale": 2
+  },
+  "layers": {
+    "base": {
+      "storage": "uint16-le",
+      "description": "Incremented mega-tile indices; zero represents default floor."
+    },
+    "rawSubLayers": {
+      "storage": "uint16-le",
+      "preserveUnknown": true,
+      "description": "Raw subtile-resolution data must be preserved for safe round trips."
+    }
+  },
+  "tilesets": {
+    "main": null,
+    "monsters": "monsters.tsx",
+    "objects": "objects.tsx"
+  },
+  "mappings": {
+    "monsters": {},
+    "objects": {},
+    "roomMask": {}
+  },
+  "notes": [
+    "This is a seed profile, not a complete mapping table.",
+    "Move conversion data here as the legacy script is refactored."
+  ]
+}
